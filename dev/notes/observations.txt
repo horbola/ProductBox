@@ -1,0 +1,2 @@
+  if an element is realtive but no content is in, then dimension of that element
+  has no effect. but if it's absolute then the element has dimension'

@@ -1,0 +1,107 @@
+.product-display {
+  margin-top: 100px; }
+  .product-display__box {
+    max-width: 720px;
+    margin: 0 auto;
+    border: 6px solid #525ef0; }
+  .product-display__buzz {
+    display: inline-block;
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: #525ef0;
+    font: 16px Montserrat, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    color: #fff; }
+  .product-display__main {
+    flex-direction: column; }
+    .product-display__main .col, .product-display__main [class='col-'] {
+      padding: 0 30px; }
+  .product-display__img-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+  .product-display__img-link {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    .product-display__img-link:after {
+      content: "Source: Germin";
+      position: relative;
+      bottom: 10px;
+      cursor: pointer;
+      font-family: Montserrat,Helvetica,Arial,sans-serif;
+      font-weight: 300;
+      font-size: 11px;
+      color: #212529;
+      opacity: .7; }
+    .product-display__img-link:hover:after {
+      font-weight: 600; }
+  .product-display__img {
+    width: 140px;
+    height: 160px;
+    cursor: pointer;
+    display: block; }
+  .product-display__title {
+    display: inline-block;
+    width: fit-content;
+    border-bottom: 1px solid #1ccc3e;
+    font-family: proxima-nova,Helvetica,Arial,sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1ccc3e;
+    cursor: pointer; }
+  .product-display__feature {
+    line-height: 1.3;
+    font-family: proxima-nova,Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #ccc; }
+  .product-display__description {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.3;
+    font-size: 16px;
+    font-weight: 400; }
+  .product-display__price {
+    text-align: center;
+    list-style-type: none;
+    padding-left: 0; }
+
+.price-button {
+  color: #fafafa;
+  font: 16px Montserrat, Helvetica, Arial, sans-serif;
+  background: #1ccc3e;
+  padding: 10px 45px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+  margin: 3px 0;
+  width: 230px; }
+
+.price-button:not(:first-child) {
+  background-color: #aaa; }
+
+.price-button:hover {
+  background-color: #525ef0; }
+
+.price-button:not(:first-child):hover {
+  background-color: #525ef0; }
+
+@media (max-width: 576px) {
+  .product-display__main {
+    flex-direction: column; }
+
+  .product-display__img-col {
+    flex-grow: 1;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px; }
+
+  .product-display__content-col {
+    flex-grow: 1;
+    max-width: 100%;
+    padding: 20px; } }

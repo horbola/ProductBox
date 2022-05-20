@@ -1,0 +1,36 @@
+
+.omponent {
+  .title {
+    color: black;
+    
+    @at-root .is-active#{&} {
+      color: blue;
+    }
+  }
+  
+  --output--
+  .Component .title {
+      color: black;
+  }
+  .is-active.Component .title {
+      color: blue;
+  }
+
+
+@mixin variant($selector) {
+  @at-root #{$selector}#{&} {
+    @content;
+  }
+}
+
+.Component {
+  .title {
+    color: black;
+    
+    @include variant('.is-active') {
+      color: blue;
+    }
+  }
+}
+
+
